@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header bg-white text-center">
+        <span class="badge btn-primary m-md-1">{{gitHubProfile.followers}}</span>
+        <span class="badge btn-secondary m-md-1">{{gitHubProfile.public_repos}}</span>
+        <span class="badge btn-danger m-md-1">{{gitHubProfile.public_gists}}</span>
+        <span class="badge btn-warning m-md-1">{{gitHubProfile.following}}</span>
+    </div>
+    <div class="card-body">
+        <div class="list-group">
+            <div class="list-group-item">
+                User Name: {{gitHubProfile.name}}
+            </div>
+            <div class="list-group-item">
+                Location: {{gitHubProfile.location}}
+            </div>
+            <div class="list-group-item">
+                Email: {{gitHubProfile.email}}
+            </div>
+            <div class="list-group-item">
+                Company: {{gitHubProfile.company}}
+            </div>
+            <div class="list-group-item">
+                Blog: {{gitHubProfile.blog}}
+            </div>
+            <div class="list-group-item">
+                Member Since: {{gitHubProfile.created_at | date}}
+            </div>
+            <div class="list-group-item">
+                Profile Url: {{gitHubProfile.html_url}}
+            </div>
+        </div>
+    </div>
+</div>
