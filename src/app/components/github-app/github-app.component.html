@@ -48,16 +48,19 @@
         <div class="row" *ngIf="showHistory">
             <div class="card">
                 <div class="card-body">
-                    <div class="list-group">
+                    <div class="list-group" *ngFor=" let history of fulldataDtl">
                         <div class="list-group-item">
-                            User Name: {{profileName}}
+                            User Name: {{history.login}}
                         </div> 
                         <div class="list-group-item">
-                            Profile Url: <a type="button" [href]="profilelink" target="_blank" class="">{{profilelink}}</a>
-                        </div>
+                            Profile Url: <a type="button" [href]="history.html_url" target="_blank" class=""> {{history.html_url}}</a>
+                        </div>                        
                     </div>
                 </div>
             </div>
+
+
+            
         </div>
     </div>
     
